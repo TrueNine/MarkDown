@@ -1,0 +1,157 @@
+# 单例模式
+> 来自: how2j/类和对象/单例模式 & 尚学堂/高琪/JavaSE高级/设计模式/单例模式精讲
+
+* 在 JVM 里,类只有一个对象(实例)存在
+
+## 单例模式的必要条件
+
+* 构造器私有化
+* 静态属性指向实例(对象)
+* 提供对外公开的方法,返回静态属性
+
+## 饿汉式
+> 无论是否需要,都会把类实例化
+
+```java
+class Test {
+    
+    // 对象持有静态实例
+    private static Test test = new Test();
+
+    // 构造器私有化
+    private Test() {
+    
+    }
+    
+    // 对外提供 get 方法
+    public Test getTest() {
+        return test;
+    }
+}
+```
+
+## 懒汉式
+> 只有在需要的时候,对象才会被实例化
+
+```java
+class Test {
+    
+    // 持有静态引用,但不指向对象
+    private static Test test = null;
+
+    // 构造器私有化
+    private Test() {
+    
+    }
+
+    // 对外提供方法
+    public Test getTest() {
+        // 在提供对象的同时,判断是否存在,如果存在则返回存在的对象
+        if (null == test) {
+            test = new Test();
+        }
+        return test;
+    }
+}
+```
+
+## 双重检测锁
+> 因为 JVM 的机制关系,所以这种方法有些情况会出问题
+
+```java
+class Test {
+
+    // 私有引用
+    private static Test test = null;
+
+    // 私有构造器
+    private Test() {
+    
+    }
+
+    // 对外缇欧刚方法
+    public Test getTest() {
+        if (null == test) {
+            // 创建新的引用指向类引用
+            Test t;
+            
+            // 进入第一重锁
+            synchronized (test.class) {
+                // 将临时引用指向类引用,再次进行判断
+                if (null == t) {
+                    synchronized (Test.class) {
+                        t = new Test();
+                    }
+                }
+            test = t;
+            }
+        }
+    return test;
+    }
+}
+```
+
+## 静态内部类
+> 实现了懒加载,同时也线程安全
+
+```java
+class Test {
+    
+    // 私有构造器
+    private Test() {
+    
+    }
+    
+    // 创建内部类
+    private static class TestClass {
+        private static final Test test = new Test();
+    }
+
+    // 返回方法,返回内部类的对象
+    public Test getTest() {
+        return TestClass.test;
+    }
+}
+```
+
+## 枚举方式
+> 枚举天生就是单例模式
+
+```java
+enum Test {
+    TEST;
+
+    // 如下可以写方法
+    public void getTest() {
+        // 方法
+    }
+}
+```
+```java
+// 调用枚举方法
+Test.TEST.getTest();
+```
+
+## 区别
+
+* 饿汉式: 线程安全,调用效率高,不能延时加载
+* 懒汉式: 线程安全,调用效率不高,可以延时加载
+* 双重检测锁模式: 由于 JVM 底层原因,偶尔会出现问题,不建议使用
+* 静态内部类: 线程安全,调用效率高,可以延时加载
+* 枚举: 线程安全,调用效率高,不能延时加载
+
+## 使用时机
+
+* 单例对象 资源占用少: 不需要延时加载,枚举好于饿汉式
+* 单例对象 资源占用大: 需要延时加载,静态内部类好于懒汉式
+
+# 练习 单例模式
+```text
+使用饿汉式单例模式, 把Hero类改造成为单例模式
+
+使用懒汉式单例模式，把Item类改造成为单例模式 
+```
+
+## 答案 未完成
+
+* 不写了
