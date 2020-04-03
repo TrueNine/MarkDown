@@ -20,7 +20,7 @@
 # 拉取
 
 ```
-	fetch:
+		fetch:
 		并不会进行合并操作
 	pull:
 		同时进行 fetch 和 merge
