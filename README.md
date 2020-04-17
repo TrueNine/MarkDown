@@ -7,6 +7,7 @@
 ## 文件夹说明
 
 *   javaSE: 存放学习 Java 基础 的笔记
+*   javaFX: 存放学习 javaFX 的笔记
 *   jetbrains: 存放使用 IDEA,或者其他一些此公司 IDE 的使用笔记
 *   尚硅谷: 在此网站白嫖视频的笔记[尚硅谷官网](https://atguigu.com/)
 *   设计模式: 遇到的一些设计模式的记录
