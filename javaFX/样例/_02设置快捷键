@@ -1,0 +1,31 @@
+# 设置快捷键
+
+>   此处只推荐使用两种方式
+
+```java
+// 第一种设置快捷键的方式
+// 创建一个快捷键,这种设置方法会跟节点关联
+// 执行 setOnAction
+// 有些时候回出现问题
+KeyCodeCombination kc1 = new KeyCodeCombination(Q,
+                                                KeyCodeCombination.SHORTCUT_DOWN);
+// 创建一个快捷键组
+Mnemonic m = new Mnemonic(b1, kc1);
+scene.addMnemonic(m);
+```
+
+### 第二种方式
+
+```java
+// 设置快捷键的方式
+// 在构造对象时,设置快捷键
+KeyCombination kc = new KeyCodeCombination(R,
+                                           KeyCombination.SHORTCUT_DOWN);
+
+scene.getAccelerators().put(kc, new Runnable() {
+    @Override
+    public void run() {
+        System.out.println("打印");
+    }
+});
+```

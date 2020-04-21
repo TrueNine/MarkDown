@@ -1,4 +1,4 @@
--- 连接查询
+	-- 连接查询
 USE myemployees;
 /*
 笛卡尔乘积:
@@ -19,7 +19,7 @@ USE myemployees;
 	功能
 		内连接
 			等值连接
-				想第一章表的每一行,根据 等值条件 匹配第二张表
+				第一章表的每一行,根据 等值条件 匹配第二张表
 				1. 多表等值连接,为多表的交集部分
 				2. n 表连接,至少需要 n - 1 个连接条件
 				3. 多表的顺序没有要求
@@ -200,7 +200,7 @@ ORDER BY
 	
 	
 	
--- 等值连接
+-- 自连接
 -- 查询员工名,员工领导的名称
 SELECT
 	e.employee_id AS 员工编号,
@@ -214,3 +214,5 @@ WHERE
 	e.manager_id = m.employee_id
 ORDER BY
 	m.employee_id ASC,e.employee_id ASC;
+	
+
