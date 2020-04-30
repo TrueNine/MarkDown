@@ -28,3 +28,15 @@ exit
 # 或者 quit
 ```
 
+## 创建用户/给予权限
+
+```mysql
+-- 创建用户
+create user xxx identified by '*****';
+
+-- 赋予xxx网络登录权限,对所有库,所有表修改的全部权限,密码为 ******
+grant all privileges on *.* to xxx@'%' identified by '******';
+
+-- 赋予xxx使用本地命令行方式赋予oooo这个库下的所有表的增删查改权限,密码为******
+grant select,insert,delete,update on oooo.* to xxxx@localhost identified by '*******';
+```

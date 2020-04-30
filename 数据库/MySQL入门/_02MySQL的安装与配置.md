@@ -35,6 +35,20 @@
 >   # 创建新表时将使用的默认存储引擎
 >   default-storage-engine=INNODB
 >   ```
+>
+>   ## 设置关于 Bolb 的大小
+>
+>   ```ini
+>   # 在最后一行追加
+>   max_allowed_packet=16M
+>   ```
+>
+>   ## 设置默认时区
+>
+>   ```ini
+>   # 设置默认时区为 + 8
+>   default-time-zone='+08:00'
+>   ```
 
 3.  初始化 mysql
 
