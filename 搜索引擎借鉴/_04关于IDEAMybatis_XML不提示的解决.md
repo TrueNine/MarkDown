@@ -1,0 +1,1 @@
+参考链接 https://blog.csdn.net/PSY_God/article/details/105815546![image-20200619090034485](../img/_04%E5%85%B3%E4%BA%8EIDEAMybatis_XML%E4%B8%8D%E6%8F%90%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3/image-20200619090034485.png)
