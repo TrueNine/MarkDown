@@ -575,27 +575,66 @@ Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日�
 1.  书写配置文件 log4j.properties(==名称必须一致,放置于类路径的根路径==)
 
 ```properties
-# 日志输出级别
-log4j.rootLogger=DEBUG,console,file
-# 输出到控制台配置
+### 配置根 ###
+log4j.rootLogger=debug,console ,fileAppender
+# ,dailyRollingFile,ROLLING_FILE,MAIL,DATABASE
+### 设置输出sql的级别，其中logger后面的内容全部为jar包中所包含的包名 ###
+log4j.logger.org.apache=debug
+log4j.logger.java.sql.Connection=debug
+log4j.logger.java.sql.Statement=debug
+log4j.logger.java.sql.PreparedStatement=debug
+log4j.logger.java.sql.ResultSet=debug
+### 配置输出到控制台 ###
 log4j.appender.console=org.apache.log4j.ConsoleAppender
 log4j.appender.console.Target=System.out
-log4j.appender.console.Threshold=DEBUG
 log4j.appender.console.layout=org.apache.log4j.PatternLayout
-log4j.appender.console.layout.ConversionPattern=[%p][%d{-dd:HH:mm:ss}][%c][%t]>>>   %m%n
-# 文件输出相关配置
-log4j.appender.file=org.apache.log4j.RollingFileAppender
-log4j.appender.file.File=./log/debug.log
-log4j.appender.console.file.MaxFileSize=1024mb
-log4j.appender.console.file.Threshold=DEBUG
-log4j.appender.file.layout=org.apache.log4j.PatternLayout
-log4j.appender.file.layout.ConversionPattern=[%p][%d{YY/MM/dd:HH:mm:ss:SS}][%c][%t][%l]>>>   %m%n
-# 日志输出级别
-log4j.logger.org.mybatis=INFO
-log4j.logger.java.sql=WARN
-log4j.logger.java.sql.statement=WARN
-log4j.logger.java.sql.ResultSet=WARN
-log4j.logger.java.sql.PreparedStatement=WARN
+log4j.appender.console.layout.ConversionPattern=[%p]:---:[%c]:---: %m :---:[%d]===[%t]===[%l]%n
+### 配置输出到文件 ###
+log4j.appender.fileAppender=org.apache.log4j.FileAppender
+log4j.appender.fileAppender.File=logs/fileLog.log
+log4j.appender.fileAppender.Append=true
+log4j.appender.fileAppender.Threshold=DEBUG
+log4j.appender.fileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.fileAppender.layout.ConversionPattern=[%p]:---:[%c]:---: %m :---:[%d]===[%t]===[%l]%n
+### 配置输出到文件，并且每天都创建一个文件 ###
+log4j.appender.dailyRollingFile=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.dailyRollingFile.File=logs/daysFileLog.log
+log4j.appender.dailyRollingFile.Append=true
+log4j.appender.dailyRollingFile.Threshold=DEBUG
+log4j.appender.dailyRollingFile.layout=org.apache.log4j.PatternLayout
+log4j.appender.dailyRollingFile.layout.ConversionPattern=[%p]:---:[%c]:---: %m :---:[%d]===[%t]===[%l]%n
+### 配置输出到文件，且大小到达指定尺寸的时候产生一个新的文件 ###
+log4j.appender.ROLLING_FILE=org.apache.log4j.RollingFileAppender
+log4j.appender.ROLLING_FILE.Threshold=ERROR
+log4j.appender.ROLLING_FILE.File=addFileLog.log
+log4j.appender.ROLLING_FILE.Append=true
+log4j.appender.ROLLING_FILE.MaxFileSize=10KB
+log4j.appender.ROLLING_FILE.MaxBackupIndex=1
+log4j.appender.ROLLING_FILE.layout=org.apache.log4j.PatternLayout
+log4j.appender.ROLLING_FILE.layout.ConversionPattern=[framework] [%p]:---:[%c]:---: %m :---:[%d]===[%t]===[%l]%n
+#### 配置输出到邮件 ###
+#log4j.appender.MAIL=org.apache.log4j.net.SMTPAppender
+#log4j.appender.MAIL.Threshold=FATAL
+#log4j.appender.MAIL.BufferSize=10
+#log4j.appender.MAIL.From=chenyl@yeqiangwei.com
+#log4j.appender.MAIL.SMTPHost=mail.hollycrm.com
+#log4j.appender.MAIL.Subject=Log4J Message
+#log4j.appender.MAIL.To=chenyl@yeqiangwei.com
+#log4j.appender.MAIL.layout=org.apache.log4j.PatternLayout
+#log4j.appender.MAIL.layout.ConversionPattern=[framework] %d - %c -%-4r [%t] %-5p %c %x - %m%n
+#### 配置输出到数据库 ###
+#log4j.appender.DATABASE=org.apache.log4j.jdbc.JDBCAppender
+#log4j.appender.DATABASE.URL=jdbc:mysql://localhost:3306/test
+#log4j.appender.DATABASE.driver=com.mysql.jdbc.Driver
+#log4j.appender.DATABASE.user=root
+#log4j.appender.DATABASE.password=
+#log4j.appender.DATABASE.sql=INSERT INTO LOG4J (Message) VALUES ('[framework] %d - %c -%-4r [%t] %-5p %c %x - %m%n')
+#log4j.appender.DATABASE.layout=org.apache.log4j.PatternLayout
+#log4j.appender.DATABASE.layout.ConversionPattern=[framework] %d - %c -%-4r [%t] %-5p %c %x - %m%n
+#log4j.appender.A1=org.apache.log4j.DailyRollingFileAppender
+#log4j.appender.A1.File=SampleMessages.log4j
+#log4j.appender.A1.DatePattern=yyyyMMdd-HH'.log4j'
+#log4j.appender.A1.layout=org.apache.log4j.xml.XMLLayout
 ```
 
 ## log4j使用
@@ -1305,3 +1344,87 @@ public Object invoke(Object proxy, Method method, Object[] args) throws Throwabl
 
 
 ![image-20200626080556780](../../../img/Mybatis/image-20200626080556780.png)
+
+# Mybatisconfig 头文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0/EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+```
+
+# mapper 头文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0/EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+```
+
+# log4j 配置
+
+```properties
+### 配置根 ###
+log4j.rootLogger=debug,console ,fileAppender
+# ,dailyRollingFile,ROLLING_FILE,MAIL,DATABASE
+### 设置输出sql的级别，其中logger后面的内容全部为jar包中所包含的包名 ###
+log4j.logger.org.apache=debug
+log4j.logger.java.sql.Connection=debug
+log4j.logger.java.sql.Statement=debug
+log4j.logger.java.sql.PreparedStatement=debug
+log4j.logger.java.sql.ResultSet=debug
+### 配置输出到控制台 ###
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+log4j.appender.console.Target=System.out
+log4j.appender.console.layout=org.apache.log4j.PatternLayout
+log4j.appender.console.layout.ConversionPattern=[%p]:---:[%c]:---: %m :---:[%d]===[%t]===[%l]%n
+### 配置输出到文件 ###
+log4j.appender.fileAppender=org.apache.log4j.FileAppender
+log4j.appender.fileAppender.File=logs/fileLog.log
+log4j.appender.fileAppender.Append=true
+log4j.appender.fileAppender.Threshold=DEBUG
+log4j.appender.fileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.fileAppender.layout.ConversionPattern=[%p]:---:[%c]:---: %m :---:[%d]===[%t]===[%l]%n
+### 配置输出到文件，并且每天都创建一个文件 ###
+log4j.appender.dailyRollingFile=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.dailyRollingFile.File=logs/daysFileLog.log
+log4j.appender.dailyRollingFile.Append=true
+log4j.appender.dailyRollingFile.Threshold=DEBUG
+log4j.appender.dailyRollingFile.layout=org.apache.log4j.PatternLayout
+log4j.appender.dailyRollingFile.layout.ConversionPattern=[%p]:---:[%c]:---: %m :---:[%d]===[%t]===[%l]%n
+### 配置输出到文件，且大小到达指定尺寸的时候产生一个新的文件 ###
+log4j.appender.ROLLING_FILE=org.apache.log4j.RollingFileAppender
+log4j.appender.ROLLING_FILE.Threshold=ERROR
+log4j.appender.ROLLING_FILE.File=addFileLog.log
+log4j.appender.ROLLING_FILE.Append=true
+log4j.appender.ROLLING_FILE.MaxFileSize=10KB
+log4j.appender.ROLLING_FILE.MaxBackupIndex=1
+log4j.appender.ROLLING_FILE.layout=org.apache.log4j.PatternLayout
+log4j.appender.ROLLING_FILE.layout.ConversionPattern=[framework] [%p]:---:[%c]:---: %m :---:[%d]===[%t]===[%l]%n
+#### 配置输出到邮件 ###
+#log4j.appender.MAIL=org.apache.log4j.net.SMTPAppender
+#log4j.appender.MAIL.Threshold=FATAL
+#log4j.appender.MAIL.BufferSize=10
+#log4j.appender.MAIL.From=chenyl@yeqiangwei.com
+#log4j.appender.MAIL.SMTPHost=mail.hollycrm.com
+#log4j.appender.MAIL.Subject=Log4J Message
+#log4j.appender.MAIL.To=chenyl@yeqiangwei.com
+#log4j.appender.MAIL.layout=org.apache.log4j.PatternLayout
+#log4j.appender.MAIL.layout.ConversionPattern=[framework] %d - %c -%-4r [%t] %-5p %c %x - %m%n
+#### 配置输出到数据库 ###
+#log4j.appender.DATABASE=org.apache.log4j.jdbc.JDBCAppender
+#log4j.appender.DATABASE.URL=jdbc:mysql://localhost:3306/test
+#log4j.appender.DATABASE.driver=com.mysql.jdbc.Driver
+#log4j.appender.DATABASE.user=root
+#log4j.appender.DATABASE.password=
+#log4j.appender.DATABASE.sql=INSERT INTO LOG4J (Message) VALUES ('[framework] %d - %c -%-4r [%t] %-5p %c %x - %m%n')
+#log4j.appender.DATABASE.layout=org.apache.log4j.PatternLayout
+#log4j.appender.DATABASE.layout.ConversionPattern=[framework] %d - %c -%-4r [%t] %-5p %c %x - %m%n
+#log4j.appender.A1=org.apache.log4j.DailyRollingFileAppender
+#log4j.appender.A1.File=SampleMessages.log4j
+#log4j.appender.A1.DatePattern=yyyyMMdd-HH'.log4j'
+#log4j.appender.A1.layout=org.apache.log4j.xml.XMLLayout
+```
+
