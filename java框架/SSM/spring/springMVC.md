@@ -456,6 +456,7 @@ public String testRestFull(@PathVariable int a, @PathVariable int b, Model model
         <filter-name>encoding</filter-name>
     <url-pattern>/*</url-pattern>
     </filter-mapping>
+    ```
 ```
     
 ## 极端情况解决方式
@@ -466,12 +467,12 @@ public String testRestFull(@PathVariable int a, @PathVariable int b, Model model
     
     1、修改tomcat配置文件 ：设置编码！
     
-```xml
+​```xml
     <Connector URIEncoding="utf-8" port="8080" protocol="HTTP/1.1"
            connectionTimeout="20000"
                redirectPort="8443" />
-    ```
-    
+```
+
     2、自定义过滤器
     
     ```java
@@ -592,14 +593,57 @@ public String testRestFull(@PathVariable int a, @PathVariable int b, Model model
 >   ==**J**ava **S**cript **O**bject **N**otation==
 >
 >   ```json
->   user {
->       name : "张三",
->       age : 16,
->       sex : "男"
+>   {
+>      "name" : "张三",
+>      "age" : 16,
+>      "sex" : "男"
 >   }
 >   ```
 >
->   
+>   ```javascript
+>   // 解析json字符串
+>   JSON.parse();
+>   // 将 json 字符串转换为 js 对象
+>   JSON.JSON.stringify();
+>   ```
+
+1.  ==@RequestMapping 的 produces 属性,可以指定一些返回类型==
+
+```text
+application/json;charset=utf-8;
+```
+
+2.  @ResponseBody 注解于方法,注明该方法只返回字符串
+3.  @RestController,注解于类上,也只会返回字符串
+
+## jackson 与 fastJSON 的使用
+
+```java
+ObjectMapper mapper = new ObjectMapper();
+mapper.writeValueAsString(obj);
+```
+
+我们可以在springmvc的配置文件上添加一段消息StringHttpMessageConverter转换配置！
+
+```xml
+<mvc:annotation-driven>
+    <mvc:message-converters register-defaults="true">
+        <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+            <constructor-arg value="UTF-8"/>
+        </bean>
+        <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+            <property name="objectMapper">
+                <bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
+                    <property name="failOnEmptyBeans" value="false"/>
+                </bean>
+            </property>
+        </bean>
+    </mvc:message-converters>
+</mvc:annotation-driven>
+
+```
+
+>   fastJSON 自行百度.......
 
 # mvc 约束
 

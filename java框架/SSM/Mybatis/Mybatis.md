@@ -287,6 +287,19 @@ Map 传递参数,直接在SQL中取 key 即可 ```parameterType="map"```
 >
 >   不仅仅是此处SQL注入
 
+## CONCAT有可能解决
+
+>   ```xml
+>   <select id="selectSearchByName" resultType="books">
+>       SELECT *
+>       FROM `ssmbuild`.`books`
+>       <where><if test="bookName != null">
+>           <!--此处必须写死在代码层面-->
+>           `bookName` LIKE
+>           CONCAT('%',#{bookName},'%')</if></where>;
+>   </select>
+>   ```
+
 # 5 Mybatis 配置解析
 
 MyBatis 的配置文件包含了会深深影响 MyBatis 行为的设置和属性信息。 配置文档的顶层结构如下：
