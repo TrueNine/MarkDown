@@ -725,7 +725,7 @@ h1.redStyle {
 a[href*="w3school.com.cn"] {color: red;}
 ```
 
-## 特定属性选择类型
+### 特定属性选择类型
 
 最后为您介绍特定属性选择器。请看下面的例子：
 
@@ -742,3 +742,88 @@ a[href*="w3school.com.cn"] {color: red;}
 <p lang="fr">Bonjour!</p>
 <p lang="cy-en">Jrooana!</p>
 ```
+
+| 选择器                                                       | 描述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [[*attribute*\]](https://www.w3school.com.cn/cssref/selector_attribute.asp) | 用于选取带有指定属性的元素。                                 |
+| [[*attribute*=*value*\]](https://www.w3school.com.cn/cssref/selector_attribute_value.asp) | 用于选取带有指定属性和值的元素。                             |
+| [[*attribute*~=*value*\]](https://www.w3school.com.cn/cssref/selector_attribute_value_contain.asp) | 用于选取属性值中包含指定词汇的元素。                         |
+| [[*attribute*\|=*value*\]](https://www.w3school.com.cn/cssref/selector_attribute_value_start.asp) | 用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。 |
+| [[*attribute*^=*value*\]](https://www.w3school.com.cn/cssref/selector_attr_begin.asp) | 匹配属性值以指定值开头的每个元素。                           |
+| [[*attribute*$=*value*\]](https://www.w3school.com.cn/cssref/selector_attr_end.asp) | 匹配属性值以指定值结尾的每个元素。                           |
+| [[*attribute**=*value*\]](https://www.w3school.com.cn/cssref/selector_attr_contain.asp) | 匹配属性值中包含指定值的每个元素。                           |
+
+## 6 后代选择器
+
+>   会选中一个元素中的所有后代,==不管嵌套多深,都会进行选择==
+
+```css
+/*选中h1 中的所有 strong 元素*/
+h1 strong {
+    background-color: blue;
+}
+```
+
+## 7 子元素选择器
+
+>   与后代选择器不同的是,只会选择固定范围的元素,不会去选择深层次的元素
+
+```css
+/*只选择 h1 的 strong*/
+h1 > strong {
+    color: red;
+}
+```
+
+## 8 相邻兄弟选择器
+
+>   选择==同一父元素==下的,某个元素的,紧贴上个元素的,第一个元素
+
+```css
+/*
+h1 和 p 同处于 body
+h1 之后出现的紧贴 h1 的第一个 p
+*/
+h1 + p {
+    color: red;
+}
+```
+
+## 9 伪类
+
+>   为特定的元素添加,特殊的效果
+
+| 属性                                                         | 描述                                     | CSS  |
+| :----------------------------------------------------------- | :--------------------------------------- | :--- |
+| [:active](https://www.w3school.com.cn/cssref/pr_pseudo_active.asp) | 向被激活的元素添加样式。                 | 1    |
+| [:focus](https://www.w3school.com.cn/cssref/pr_pseudo_focus.asp) | 向拥有键盘输入焦点的元素添加样式。       | 2    |
+| [:hover](https://www.w3school.com.cn/cssref/pr_pseudo_hover.asp) | 当鼠标悬浮在元素上方时，向元素添加样式。 | 1    |
+| [:link](https://www.w3school.com.cn/cssref/pr_pseudo_link.asp) | 向未被访问的链接添加样式。               | 1    |
+| [:visited](https://www.w3school.com.cn/cssref/pr_pseudo_visited.asp) | 向已被访问的链接添加样式。               | 1    |
+| [:first-child](https://www.w3school.com.cn/cssref/pr_pseudo_first-child.asp) | 向元素的第一个子元素添加样式。           | 2    |
+| [:lang](https://www.w3school.com.cn/cssref/pr_pseudo_lang.asp) | 向带有指定 lang 属性的元素添加样式。     | 2    |
+
+
+
+```css
+a:hover {
+    color: red;
+}
+```
+
+**提示：**在 CSS 定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+
+**提示：**在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。
+
+**提示：**伪类名称对大小写不敏感。
+
+## 10 伪元素
+
+>   为某些特定元素,添加特定效果
+
+| 属性                                                         | 描述                             | CSS  |
+| :----------------------------------------------------------- | :------------------------------- | :--- |
+| [:first-letter](https://www.w3school.com.cn/cssref/pr_pseudo_first-letter.asp) | 向文本的第一个字母添加特殊样式。 | 1    |
+| [:first-line](https://www.w3school.com.cn/cssref/pr_pseudo_first-line.asp) | 向文本的首行添加特殊样式。       | 1    |
+| [:before](https://www.w3school.com.cn/cssref/pr_pseudo_before.asp) | 在元素之前添加内容。             | 2    |
+| [:after](https://www.w3school.com.cn/cssref/pr_pseudo_after.asp) | 在元素之后添加内容。             | 2    |
