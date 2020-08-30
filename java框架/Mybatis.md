@@ -446,7 +446,7 @@ password=root
 | collection | Collection |
 | iterator   | Iterator   |
 
-# 7 声明周期和作用域
+# 7 生命周期和作用域
 
 >   至关重要???,**错误使用会导致严重的并发问题**
 
@@ -718,16 +718,16 @@ List<User> getUserByLimit(Map<String, Integer> map);
      */
 @Test
 public void test3() {
-    try (SqlSession sqlSession = MybatisUtils.getSqlSession()) {
-        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
-        Map<String, Integer> map = new HashMap<>();
-        map.put("startIndex", 0);
-        map.put("pageSize", 2);
-        List<User> userByLimit = mapper.getUserByLimit(map);
-        for (User user : userByLimit) {
-            logger.info(user);
-        }
+  try (SqlSession sqlSession = MybatisUtils.getSqlSession()) {
+    UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+    Map<String, Integer> map = new HashMap<>();
+    map.put("startIndex", 0);
+    map.put("pageSize", 2);
+    List<User> userByLimit = mapper.getUserByLimit(map);
+    for (User user : userByLimit) {
+      logger.info(user);
     }
+  }
 }
 ```
 

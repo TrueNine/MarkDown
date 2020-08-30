@@ -506,7 +506,7 @@ getFullNameByComputed: {
 <li v-for="(item,index) in mea" :key="item">{{item}}</li>
 ```
 
-### 数组的响应式
+### ==数组的响应式==
 
 ​	在渲染后,**直接修改数组索引的值,是不会进行渲染的**
 
@@ -725,6 +725,49 @@ Promise.all([
     }, 5000);
   })
 ]).then(args => console.log(args));
+```
+
+## ==js 定义字符串常量==
+
+​	很多时候,比如方法的名称之类,一些常用的字符,可以使用常量进行定义
+
+使用场景:
+
+​	Vuex,Mutation 进行 commit 的类型
+
+### 常量定义并导出
+
+​	在其他文件中使用,引入即可
+
+```javascript
+export const INCREMENT = "increment";
+```
+
+### 使用常量为方法命名
+
+​	js支持为方法使用字符串类型进行命名,此时也可以使用常量,(如同 java 的枚举一般使用),也避免了一定的错误???
+
+```javascript
+// 方法的名称,使用 [] 将其包裹即可
+[INCREMENT](state) {
+  state.counter++;
+}
+```
+
+## (对象解构)引用转移简写方式
+
+```javascript
+let obj = {
+  name: "张三",
+  age 10
+};
+
+// 平常的取值方式
+let name = obj.name;
+let age = obj.age;
+
+// 简写方式
+let {name,age} = obj;
 ```
 
 
@@ -2407,3 +2450,496 @@ activated() {
 
 *   include 包含哪些组件: (组件 name 属性)
 *   exclude 不包含哪些组件,(组件name属性)
+
+# 10 vuex
+
+​	是一个专门为vue.js 开发的状态管理模式,采用 ==集中式存储管理==,应用内所有组件的状态,并以相应的规则保证状态以一种可预测的方式发生变化. vuex 也集成到了vue 的官方调试工具 devtools extension ....
+
+​	**可以理解为: 一个管理全局,==并且是响应式的==,一些变量的一个容器**
+
+## 基本使用
+
+1.  安装vuex,不适用开发时依赖
+
+```shell
+npm install --save vuex
+```
+
+2.  配置然后,如同引入vue-router 一般,在main.js 引入即可
+
+```javascript
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+// 安装vuex插件
+Vue.use(Vuex);
+
+// 进行配置,导出,main.js引入vue
+export default new Vuex.Store({
+  // 保存状态
+  state: {
+    counter: 0
+  },
+  // 定义方法
+  mutations: {
+    increment(state) {
+      state.counter++;
+    },
+    decrement(state) {
+      state.counter--;
+    }
+  },
+  getters: {},
+  actions: {},
+  modules: {}
+});
+```
+
+3.  简单地使用
+
+```vue
+<template>
+<div>
+  <button @click="addition">+</button>
+  <!--从 state 取值-->
+  <h3>{{$store.state.counter}}</h3>
+  <button @click="subtraction">-</button>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "vuext",
+    methods: {
+      addition() {
+        // 通过 commit 进行提交,指定需要的方法
+        this.$store.commit("increment");
+      },
+      subtraction() {
+        this.$store.commit("decrement");
+      }
+    }
+  }
+</script>
+
+<style scoped>
+
+</style>
+```
+
+## 核心概念
+
+### State
+
+保存状态,单例状态树
+
+*   可以通过 ```$store.state.xx```取出并使用
+
+### getters
+
+​	类似于组件的计算属性,可以直接计算过后然后取出
+
+```javascript
+getters: {
+    // 调用进行计算
+    powerCounter(state) {
+      return state.counter * 1024;
+    },
+    // 调用进行筛选
+    usersFilter(state) {
+      return state.users.filter(u => u.age >= 18);
+    },
+    // 调用自身的返回值
+    usersFilterAfterLength(state, getters) {
+      return getters.usersFilter.length;
+    },
+    // 返回一个函数以供调用
+    dynamicUserAge(state) {
+      return function (age) {
+        return state.users.filter(u => u.age >= age);
+      }
+    }
+  }
+```
+
+```vue
+<h1>{{$store.getters.powerCounter}}</h1>
+<h1>{{$store.getters.usersFilter}}</h1>
+<h1>{{$store.getters.usersFilterAfterLength}}</h1>
+<h1>{{$store.getters.dynamicUserAge(10)}}</h1>
+```
+
+
+
+*   使用方式: ```$store.getters.xx```
+
+### Mutations
+
+​	vuex store状态的唯一更新方式,提交 Mutations
+
+主要包含两部分:
+
+*   String 类型的 **事件类型**
+*   一个回调函数 (handler),该函数返回的第一个参数是 state
+
+```javascript
+// 一个 Mutation
+// 事件类型后的部分都是回调函数
+事件类型 (state) {
+  ...
+}
+```
+
+#### 参数的传递
+
+```javascript
+// 进行提交,携带参数
+this.$store.commit("事件类型",负载参数);
+```
+
+```javascript
+// 进行取值
+addDynamicNumber(state, count) {
+  state.counter += count;
+}
+```
+
+#### 不同的提交方式/(风格)
+
+*   提交
+
+```javascript
+addParam(count) {
+  this.$store.commit({
+    type: "addDynamicNumber",
+    count
+  });
+};
+```
+
+*   取值: **必须从传入的对象内取值**
+
+```javascript
+addDynamicNumber(state, payload) {
+  state.counter += payload.count;
+}
+```
+
+### ==Mutations 的响应规则==
+
+​	Vuex中的store.state 是响应式的,当数据发生改变时,Vue组件会自动更新(通知每一个使用该数据的渲染点发生变化),但必须遵守一定的规则
+
+*   提前在 store 中初始化好所有的属性
+
+*   当添加属性时,使用以下的方式
+    *   为现有的属性的内部属性设置新的值
+        *   直接替换现有的属性,**不是响应式的**
+    *   通过 vue 的方式,添加到响应式系统内
+
+    ```javascript
+    // 修改的对象, 索引值 number 或 属性key string
+    Vue.set(this.obj,"key","value");
+    // 设置数组的方式
+    Vue.set(this.arrays,3,"value");
+    ```
+
+    *   删除某个属性,使用 Vue.delete()
+
+    ```javascript
+    // 对象 索引 number 或 key string
+    Vue.delete(this.obj,"key");
+    // 数组同理
+    Vue.delete(this.array,0);
+    ```
+
+    >   **通过 delete 关键字进行删除属性,并非响应式的**
+    >
+    >   ```javascript
+    >   // 此种方式不是响应式的
+    >   delete obj.info;
+    >   ```
+
+### actions
+
+​	主要用于异步操作
+
+mutation 中的方法必须时同步的方法,如果存在异步操作,调试工具: devtools **就没有办法捕获到**,造成一些不必要的麻烦
+
+actions 类似于 mutations,同样可以传递参数 , 其是用来替代 mutations 进行异步操作???
+
+但提交使用的并非 commit 而是 **dispatch**
+
+```javascript
+this.$store.dispatch("axios", "新的字体");
+```
+
+之后如果在正常的情况下,在 **调度的方法中,使用 commit 进行提交即可**
+
+```javascript
+axios(context, payload) {
+  return new Promise((resolve, reject) => {
+    setTimeout(f => {
+      try {
+        console.log("拿到了数据: " + payload);
+        // 进行提交
+        context.commit("updateLike", payload);
+        resolve();
+      } catch (e) {
+        console.log(e);
+        reject();
+      }
+    }, 300);
+  });
+}
+```
+
+### 异步通知外部
+
+​	假设某些情况,需要通知外部,是否修改成功,是否获取到正确的值,这时可以直接返回一个 Promise 即可
+
+```javascript
+axios(context, payload) {
+  return new Promise((resolve, reject) => {
+    setTimeout(f => {
+      try {
+        console.log("拿到了数据: " + payload);
+        context.commit("updateLike", payload);
+        resolve();
+      } catch (e) {
+        console.log(e);
+        reject();
+      }
+    }, 300);
+  });
+}
+```
+
+接收方进行的处理
+
+```javascript
+axios() {
+  console.log("标记");
+  this.$store
+    .dispatch("axios", "新的字体")
+    .then(f => {
+    console.log("已经正常接收到了数据");
+  })
+    .catch(f => {
+    console.log("发生错误");
+  });
+}
+```
+
+
+
+### modules
+
+​	划分模块,针对不同模块,再作相关数据保存,其内部仍然可以嵌套常量,以达到 **分类明确的目的**
+
+```javascript
+modules: {
+  A: {
+    state: {
+      name: "张三"
+    },
+      mutations: {},
+        actions: {},
+          getters: {}
+  },
+    B: {}
+}
+```
+
+
+
+>   取值方式略有不同
+>
+>   ```javascript
+>   $store.state.A.name
+>   ```
+>
+>   但 getters 和 mutations,actions 是一样使用的,但需要遵循一定的规则
+>
+>   1.  使用不同的方式进袭姑娘取值
+>   2.  不能与 state 中的常量 **重名**
+>   3.  如果发生重名,则优先使用 state 中的常量
+>   4.  getters,mutations,actions 均以上规则适用
+
+## 文件的组织方式
+
+​	利用导入导出,将多个属性分散在不同的文件,然后必须以 **同名变量**,进行划分
+
+http://123.207.32.32:8000/home/multidata
+
+
+
+# 11 axios
+
+>   Ajax input output system
+>
+>   一个网络请求框架, ==支持Promise 异步==
+
+vue 在 1.*, 选择使用 vue-resource
+
+## 支持多种请求方式
+
+*   axios(config)
+*   axios.request(config)
+*   axios.get(url,config)
+*   axios.head(url,config)
+*   axios.post(url,data,config)
+*   axios.put(url,data,config)
+*   axios.patch(url,data,config)
+*   ...
+
+==这些请求会携带一些 axios 自身的数据,可以通过 .data 将数据取出==
+
+```javascript
+// 普通方式请求
+axios({
+  url: "http://wwww...",
+  method: "get"
+});
+
+// get | post 请求
+axios.get("http://ww..",{
+  // get 请求填写参数
+	params: {
+    encoding: "utf-8",
+    type: "shop",
+    admin: false
+  }
+});
+```
+
+## 多请求并发
+
+>   有时候需要多个请求同时完成加载,称之为并发请求
+
+```javascript
+// 数组的请求方式
+// 也可以使用数组解构的方式
+axios.all([axios(),axios(),axios()]).then(results => {
+  // 进行代码处理
+});
+
+// 方法的请求方式
+axios.all([axios(),axios(),axios()]).then(axios.spread((res1,res2) => {
+	// 直接对 res1,res2 进行操作
+}));
+```
+
+## 配置
+
+```javascript
+axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.timeout = 5000;
+
+axios.defaults.headers.post["Content-Type"] = "application/json";
+```
+
+## 创建实例对象
+
+```javascript
+axios.create(config);
+```
+
+## 请求封装
+
+```javascript
+/**
+ * 封装网络请求
+ * @param config axios配置对象
+ * @param then 成功后回调函数
+ * @param err 失败后回调函数
+ */
+export function request(config, then, err) {
+  // 1. 创建实例
+  const req = axios.create({
+    baseURL: "http://localhost:8080",
+    timeout: 10000
+  });
+  // 执行网络请求
+  req(config).then(res => {
+    then(res);
+  }).catch(error => {
+    err(error);
+  });
+}
+```
+
+### 直接返回 Promise
+
+```javascript
+/**
+ * 直接返回Promise的封装
+ * @param config axios配置
+ * @returns {Promise<unknown>} 使用此对象回调
+ */
+export function requester(config) {
+  return new Promise((resolve, reject) => {
+    const req = axios.create({
+      baseURL: "http://localhost:8080",
+      timeout: 10000
+    });
+    req(config).then(success => {
+      resolve();
+    }).catch(failure => {
+      reject();
+    });
+  });
+}
+```
+
+### 直接返回 axios 本身
+
+```javascript
+/**
+ * 当作 Promise 进行调用即可
+ *
+ * @param config axios 配置
+ * @returns {AxiosInstance} 直接返回 axios
+ */
+export function request(config) {
+  const req = axios.create({
+    baseURL: "http://localhost:8080",
+    timeout: 10000
+  });
+  req(config);
+  return req;
+}
+```
+
+## 拦截器
+
+>   请求成功失败,请求之前之后
+
+### 请求拦截
+
+```javascript
+// 使用 实例进行 请求拦截
+axiosInstance.interceptors.request.use(config => {
+  // 设置不符合规范的请求
+  // 进行加载动画
+  // 登录携带特殊信息
+  // ......
+  // 进行放行
+  return config;
+}, error => {
+  // 进行错误处理
+  // 放行
+  return error;
+});
+```
+
+### 响应拦截
+
+```javascript
+// 响应拦截
+axiosInstance.interceptors.response.use(result => {
+  return result.data;
+}, error => {
+  return error;
+});
+```
+
