@@ -1,0 +1,1274 @@
+[
+  {
+    "id": 5,
+    "word": "author",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈôTHər",
+    "explanation": "作者\n\n名词: 作者; 笔者; 作家",
+    "tags": [],
+    "createdAt": 1606699327517
+  },
+  {
+    "id": 6,
+    "word": "return",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "r蓹藞t蓹rn",
+    "explanation": "杩斿洖\n\n鍔ㄨ瘝: 杩斿洖; 閫�鍥�; 閫�杩�; 鍥�; 鍥炲綊; 閲嶈繑; 褰掕繕; 褰�; 鍥炴潵; 杩�; 閫�; 閲嶅洖; 杩�; 鍥炲幓; 閫佽繕; 鍐�; 閰�; 璧㈠埄; 绛�; 鏃�; 瀵癨n鍚嶈瘝: 褰掕繕; 鍥炴潵",
+    "tags": [],
+    "createdAt": 1606699171778
+  },
+  {
+    "id": 8,
+    "word": "Person",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "藞p蓹rs(蓹)n",
+    "explanation": "浜篭n\n鍚嶈瘝: 浜�; 浜哄＋; 鑰�; 浜鸿韩; 鍛�; 韬�; 寰�; 鐓�",
+    "tags": [],
+    "createdAt": 1606699239579
+  },
+  {
+    "id": 9,
+    "word": "new",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "n(y)o蜑o",
+    "explanation": "鏂癨n\n褰㈠璇�: 鏂�; 鏂板叴; 鏂伴; 鏂颁换; 鏂板; 鑰�; 寮�",
+    "tags": [],
+    "createdAt": 1606699247111
+  },
+  {
+    "id": 10,
+    "word": "Integer",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈin(t)əjər",
+    "explanation": "整数",
+    "tags": [],
+    "createdAt": 1606699569415
+  },
+  {
+    "id": 11,
+    "word": "Boolean",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈbo͞olēən",
+    "explanation": "布尔型",
+    "tags": [],
+    "createdAt": 1606699579118
+  },
+  {
+    "id": 12,
+    "word": "Calendar",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "日历\n\n名词: 日历; 历\n动词: 记录",
+    "tags": [],
+    "createdAt": 1606699600636
+  },
+  {
+    "id": 13,
+    "word": "Date",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "日期",
+    "tags": [],
+    "createdAt": 1606699608908
+  },
+  {
+    "id": 14,
+    "word": "Time",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "时间",
+    "tags": [],
+    "createdAt": 1606699617995
+  },
+  {
+    "id": 15,
+    "word": "Date Time",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "约会时间",
+    "tags": [],
+    "createdAt": 1606699626128
+  },
+  {
+    "id": 16,
+    "word": "java",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "爪哇",
+    "tags": [],
+    "createdAt": 1606699634832
+  },
+  {
+    "id": 17,
+    "word": "Time Zone",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "时区\n\n名词: 区时; 时区",
+    "tags": [],
+    "createdAt": 1606699653187
+  },
+  {
+    "id": 18,
+    "word": "Prepared Statement",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "准备好的声明",
+    "tags": [],
+    "createdAt": 1606699671283
+  },
+  {
+    "id": 19,
+    "word": "System",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "系统\n\n名词: 系统; 体系; 制度; 制; 体制; 系; 装置; 体",
+    "tags": [],
+    "createdAt": 1606699681794
+  },
+  {
+    "id": 20,
+    "word": "Order",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "订购",
+    "tags": [],
+    "createdAt": 1606699699959
+  },
+  {
+    "id": 21,
+    "word": "Program",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "程序\n\n名词: 程序; 计划; 方案; 节目; 规划; 日程; 议程; 秩序册; 应用程式\n动词: 编程",
+    "tags": [],
+    "createdAt": 1606699721500
+  },
+  {
+    "id": 22,
+    "word": "Development",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "发展历程\n\n名词: 发育; 显影; 展开; 发达; 动态; 演化; 养殖; 续集; 续编",
+    "tags": [],
+    "createdAt": 1606699768509
+  },
+  {
+    "id": 23,
+    "word": "Double",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "双\n\n形容词: 双; 双重; 倍; 复; 双料; 双方; 兼; 褔\n动词: 加倍; 翻一番; 重\n名词: 两倍; 双精度型\n副词: 双重地; 双摺地",
+    "tags": [],
+    "createdAt": 1606699781833
+  },
+  {
+    "id": 24,
+    "word": "Float",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "浮动\n\n动词: 浮动; 浮; 漂浮; 飘; 漂; 飘动; 飘荡; 泛\n名词: 浮筒; 彩车; 泛; 镘; 浮游物; 镘子",
+    "tags": [],
+    "createdAt": 1606699790083
+  },
+  {
+    "id": 25,
+    "word": "It",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "它\n\n代词: 它; 其; 之",
+    "tags": [],
+    "createdAt": 1606699797236
+  },
+  {
+    "id": 26,
+    "word": "My",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "我的\n\n代词: 吾; 敝; 鄙; 窃; 我的",
+    "tags": [],
+    "createdAt": 1606699803370
+  },
+  {
+    "id": 27,
+    "word": "synchronized",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "已同步",
+    "tags": [],
+    "createdAt": 1606699811449
+  },
+  {
+    "id": 28,
+    "word": "Array",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "数组\n\n动词: 排列; 部署\n名词: 排列; 矩阵; 序列; 大批",
+    "tags": [],
+    "createdAt": 1606699835633
+  },
+  {
+    "id": 29,
+    "word": "List",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "清单\n\n名词: 目录; 表; 单; 明细表; 目; 谱; 籙\n动词: 列举; 开列; 编目",
+    "tags": [],
+    "createdAt": 1606699842488
+  },
+  {
+    "id": 30,
+    "word": "Tree",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "树\n\n名词: 树; 木; 棪; 柅; 槾; 楰; 榔; 杝; 柂; 桋; 楀; 树树",
+    "tags": [],
+    "createdAt": 1606699849467
+  },
+  {
+    "id": 31,
+    "word": "Map",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "地图\n\n名词: 地图; 图\n动词: 测绘",
+    "tags": [],
+    "createdAt": 1606699856810
+  },
+  {
+    "id": 32,
+    "word": "Key",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "键\n\n名词: 键; 关键; 钥匙; 钥; 电键; 答案; 图例; 窍门; 窍; 调调; 钤键\n动词: 锁上\n形容词: 根本; 基本的; 主要的",
+    "tags": [],
+    "createdAt": 1606699862397
+  },
+  {
+    "id": 33,
+    "word": "Value",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "值\n\n名词: 值; 价值; 价格; 价; 价钱; 音值; 定值\n动词: 重视; 看重; 珍视; 宝贵; 尊重; 珍重; 推崇; 臧否; 鉴赏; 翊; 尚",
+    "tags": [],
+    "createdAt": 1606699868214
+  },
+  {
+    "id": 34,
+    "word": "Object",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "目的\n\n名词: 目的; 物体; 物; 物件; 客体; 宾语; 课题; 事物; 受事; 对向\n动词: 拒绝; 不以为然; 嫌",
+    "tags": [],
+    "createdAt": 1606699876373
+  },
+  {
+    "id": 35,
+    "word": "Unsigned",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˌənˈsīnd",
+    "explanation": "无符号",
+    "tags": [],
+    "createdAt": 1606699891510
+  },
+  {
+    "id": 36,
+    "word": "Signed",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "签\n\n动词: 签署; 签; 签字; 征兆; 记名; 署",
+    "tags": [],
+    "createdAt": 1606699902874
+  },
+  {
+    "id": 37,
+    "word": "Module",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "模组\n\n名词: 组件; 模; 舱",
+    "tags": [],
+    "createdAt": 1606699965343
+  },
+  {
+    "id": 38,
+    "word": "Editor",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "编辑\n\n名词: 编辑; 编者",
+    "tags": [],
+    "createdAt": 1606699995685
+  },
+  {
+    "id": 39,
+    "word": "Iterator",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "迭代器",
+    "tags": [],
+    "createdAt": 1606700010732
+  },
+  {
+    "id": 40,
+    "word": "Override",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "覆写\n\n动词: 废除; 渺视",
+    "tags": [],
+    "createdAt": 1606700025088
+  },
+  {
+    "id": 41,
+    "word": "extends",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "延伸\n\n动词: 延伸; 扩展; 延长; 扩大; 伸出; 伸展; 扩充; 延; 扩; 伸; 发放; 展; 蔓延; 伸缩; 宽; 铺; 亘; 致; 达; 接; 申; 礴; 驳; 发给; 演变; 疏开",
+    "tags": [],
+    "createdAt": 1606700033001
+  },
+  {
+    "id": 42,
+    "word": "dependency",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "dəˈpendənsē",
+    "explanation": "依赖\n\n名词: 属地; 属; 依属",
+    "tags": [],
+    "createdAt": 1606700057308
+  },
+  {
+    "id": 43,
+    "word": "Alias",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "别名\n\n副词: 别号\n名词: 别号",
+    "tags": [],
+    "createdAt": 1606700107769
+  },
+  {
+    "id": 44,
+    "word": "name",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "nām",
+    "explanation": "名称\n\n名词: 名称; 名; 名字; 名义; 姓; 称号; 号\n动词: 命名; 称; 指名; 定名; 指派; 谥; 谓; 曰; 起名儿; 称说",
+    "tags": [],
+    "createdAt": 1606700188572
+  },
+  {
+    "id": 45,
+    "word": "sex",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "seks",
+    "explanation": "性别\n\n名词: 性别; 性; 性交; 性欲",
+    "tags": [],
+    "createdAt": 1606700204007
+  },
+  {
+    "id": 46,
+    "word": "text",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "tekst",
+    "explanation": "文本\n\n名词: 文本; 正文; 课文; 写作; 纂; 案文; 纂辑",
+    "tags": [],
+    "createdAt": 1606700212094
+  },
+  {
+    "id": 47,
+    "word": "word",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "wərd",
+    "explanation": "字\n\n名词: 字; 词; 单词; 话; 言; 言辞; 笔墨; 约言",
+    "tags": [],
+    "createdAt": 1606700223984
+  },
+  {
+    "id": 48,
+    "word": "world",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "wərld",
+    "explanation": "世界\n\n名词: 世界; 世; 界; 天地; 人间; 社会; 世面; 宇\n形容词: 世界上; 世界知名",
+    "tags": [],
+    "createdAt": 1606700232299
+  },
+  {
+    "id": 49,
+    "word": "union",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈyo͞onyən",
+    "explanation": "联盟\n\n名词: 联盟; 工会; 联合; 盟; 联合会; 会; 协会; 并; 合流; 合伙; 关连; 并集",
+    "tags": [],
+    "createdAt": 1606700250112
+  },
+  {
+    "id": 50,
+    "word": "stop",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "stäp",
+    "explanation": "停\n\n动词: 停止; 站; 阻止; 停; 停车; 制止; 止; 终止; 阻挡; 中止; 停顿; 停歇; 罢; 止住; 阻拦; 拦住; 住手; 站住; 休止; 停息; 断; 遏; 逗留; 住; 停摆; 收; 截; 止息; 戒; 阻击; 辍; 断绝; 沮; 歇; 卡; 收起; 锢; 已; 弭; 扎; 碍; 逗; 偃; 跱; 柅; 寝; 踯; 煞; 堨; 湮; 杜; 辍止; 羇泊\n名词: 阻止; 车站; 遏; 阏",
+    "tags": [],
+    "createdAt": 1606700260315
+  },
+  {
+    "id": 51,
+    "word": "destroy",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "dəˈstroi",
+    "explanation": "破坏\n\n动词: 破坏; 摧毁; 销毁; 灭; 毁灭; 摧; 毁; 摧残; 歼灭; 击毁; 捣毁; 破; 隳; 击破; 偾; 歼; 残; 堕; 隳脞",
+    "tags": [],
+    "createdAt": 1606701103905
+  },
+  {
+    "id": 52,
+    "word": "Configuration",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "组态\n\n名词: 组态; 构造; 格局; 表面配置",
+    "tags": [],
+    "createdAt": 1606701177785
+  },
+  {
+    "id": 53,
+    "word": "Version",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "版\n\n名词: 版; 版本; 文本; 说法; 翻译",
+    "tags": [],
+    "createdAt": 1606701203884
+  },
+  {
+    "id": 54,
+    "word": "operation",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˌäpəˈrāSH(ə)n",
+    "explanation": "操作\n\n名词: 行动; 手术; 作业",
+    "tags": [],
+    "createdAt": 1606701235905
+  },
+  {
+    "id": 55,
+    "word": "active",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈaktiv",
+    "explanation": "活性\n\n形容词: 活性; 积极; 活跃; 活泼; 现行; 能动; 娓; 激越",
+    "tags": [],
+    "createdAt": 1606701243226
+  },
+  {
+    "id": 56,
+    "word": "remove",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "rəˈmo͞ov",
+    "explanation": "去掉\n\n动词: 清除; 消除; 拆除; 排除; 除; 解除; 去; 扫除; 祛; 移; 撤除; 拔除; 卸; 撤; 搬迁; 搬移; 搬; 免; 搬家; 废止; 屏除; 辙; 排斥; 取而代之; 输; 纾; 输出\n名词: 升级",
+    "tags": [],
+    "createdAt": 1606701252030
+  },
+  {
+    "id": 57,
+    "word": "move",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "mo͞ov",
+    "explanation": "移动\n\n动词: 移动; 动; 行动; 移; 搬家; 迁移; 搬迁; 运行; 搬; 迁; 感动; 走; 挪动; 搬移; 挪; 打动; 动弹; 感; 迁徙; 调; 提议; 触动; 拨; 摆; 跞; 感到; 触; 游; 扤\n名词: 举动; 运动; 举; 步骤; 行径; 跞",
+    "tags": [],
+    "createdAt": 1606701259690
+  },
+  {
+    "id": 58,
+    "word": "close",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "klōs",
+    "explanation": "关\n\n动词: 关闭; 合; 关; 封闭; 闭; 临近; 截止; 闭幕; 合拢; 弥合; 隔离; 进逼; 缄; 掩; 堙\n形容词: 密切; 紧密; 闭合; 亲密; 密; 相近; 严密; 紧; 贴心; 亲; 细密; 亲切; 挚; 昵; 迩; 窒闷; 深; 有蓬的; 近的\n副词: 近; 不远; 短; 骈阗\n名词: 弥合; 儩",
+    "tags": [],
+    "createdAt": 1606701264809
+  },
+  {
+    "id": 59,
+    "word": "public",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈpəblik",
+    "explanation": "上市\n\n形容词: 公共; 公众; 公开; 公; 国有; 国立\n名词: 公众; 公用; 大众; 舆论; 公家; 舆论界",
+    "tags": [],
+    "createdAt": 1606701281810
+  },
+  {
+    "id": 60,
+    "word": "protected",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "prəˈtektəd",
+    "explanation": "受保护的\n\n动词: 保护; 防护; 维护; 保; 护; 保卫; 预防; 捍卫; 防; 保佑; 拱卫; 卫; 防守; 庇; 佑; 驻守; 妪; 镇守; 驻防; 腓; 镇; 翼庇",
+    "tags": [],
+    "createdAt": 1606701299755
+  },
+  {
+    "id": 61,
+    "word": "private",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈprīvit",
+    "explanation": "私人的\n\n形容词: 私人; 私营; 私有; 私; 私立\n名词: 列兵; 阴部; 卒",
+    "tags": [],
+    "createdAt": 1606701308983
+  },
+  {
+    "id": 62,
+    "word": "search",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "sərCH",
+    "explanation": "搜索\n\n动词: 搜索; 搜寻; 搜查; 寻找; 寻求; 搜; 查; 寻; 追寻; 索; 探求; 寻觅; 寻访; 薮; 监工; 抄身\n名词: 搜索; 搜寻; 搜查; 搜; 搜身; 廋疏",
+    "tags": [],
+    "createdAt": 1606701329826
+  },
+  {
+    "id": 63,
+    "word": "logger",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈlôɡər",
+    "explanation": "记录器",
+    "tags": [],
+    "createdAt": 1606701350876
+  },
+  {
+    "id": 64,
+    "word": "index",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈinˌdeks",
+    "explanation": "指数\n\n名词: 指数; 索引; 指标; 附以索引",
+    "tags": [],
+    "createdAt": 1606701387352
+  },
+  {
+    "id": 65,
+    "word": "out",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "out",
+    "explanation": "出\n\n动词: 赶出; 逐出\n形容词: 大; 边上的; 广大的; 极边的; 外部的; 外面的\n副词: 过去; 明显地\n介词: 到 ... 那一边; 到 ... 外; 到 ... 外面; 在 ... 那一边; 在 ... 外; 在 ... 外面",
+    "tags": [],
+    "createdAt": 1606701416980
+  },
+  {
+    "id": 66,
+    "word": "in",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "in",
+    "explanation": "在\n\n介词: 在; 中; 于; 里; 其中; 里边; 在 ... 之内",
+    "tags": [],
+    "createdAt": 1606701423407
+  },
+  {
+    "id": 67,
+    "word": "put",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "po͝ot",
+    "explanation": "放\n\n动词: 放; 放置; 置于; 摆; 摆放; 搁; 置; 赋予; 坐; 干; 摆列; 放置者\n名词: 掷; 投击",
+    "tags": [],
+    "createdAt": 1606701430457
+  },
+  {
+    "id": 68,
+    "word": "push",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "po͝oSH",
+    "explanation": "推\n\n动词: 推; 按; 压; 促进; 促使; 挤; 揿; 拨; 搡; 扒; 抵; 勖\n名词: 奋力",
+    "tags": [],
+    "createdAt": 1606701439097
+  },
+  {
+    "id": 69,
+    "word": "this",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "T͟His",
+    "explanation": "这个\n\n代词: 本; 这; 此; 这个; 这项; 这位; 今; 其; 敝; 滋; 斯",
+    "tags": [],
+    "createdAt": 1606701458318
+  },
+  {
+    "id": 70,
+    "word": "that",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "T͟Hat",
+    "explanation": "那\n\n代词: 那; 那个; 其; 彼\n连词: 该; 因为; 就",
+    "tags": [],
+    "createdAt": 1606701464679
+  },
+  {
+    "id": 71,
+    "word": "left",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "left",
+    "explanation": "剩下\n\n副词: 左; 左边; 向左; 左面\n名词: 左; 左边; 左面",
+    "tags": [],
+    "createdAt": 1606701473688
+  },
+  {
+    "id": 72,
+    "word": "right",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "rīt",
+    "explanation": "对\n\n名词: 权利; 右; 权; 右边; 正义\n动词: 纠正; 拨正\n副词: 向右; 直接; 直接地\n形容词: 对; 是; 不错; 然; 有方; 在理; 当; 韪; 顒; 合适的; 右方的; 合理的; 直的",
+    "tags": [],
+    "createdAt": 1606701497914
+  },
+  {
+    "id": 73,
+    "word": "width",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "widTH",
+    "explanation": "宽度\n\n名词: 宽度; 宽; 幅度; 幅; 宽窄; 广阔; 广博; 焚; 阔度",
+    "tags": [],
+    "createdAt": 1606701503482
+  },
+  {
+    "id": 74,
+    "word": "height",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "hīt",
+    "explanation": "高度\n\n名词: 高度; 身高; 高; 高低; 高峰; 高矮; 身长; 个儿; 个子",
+    "tags": [],
+    "createdAt": 1606701528024
+  },
+  {
+    "id": 75,
+    "word": "body",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈbädē",
+    "explanation": "身体\n\n名词: 体; 身体; 机身; 身; 物体; 机关; 肉体; 肌体; 人身; 形; 支架; 组; 班",
+    "tags": [],
+    "createdAt": 1606701534137
+  },
+  {
+    "id": 76,
+    "word": "console",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "kənˈsōl",
+    "explanation": "安慰\n\n动词: 安慰; 慰; 宽慰; 抚\n名词: 角撑架",
+    "tags": [],
+    "createdAt": 1606701541635
+  },
+  {
+    "id": 77,
+    "word": "alert",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "əˈlərt",
+    "explanation": "警报\n\n名词: 警报; 警戒; 灵\n形容词: 警惕; 警; 机警; 灵; 僖; 乖; 遫; 獧; 耳听八方\n动词: 戒备; 惊动",
+    "tags": [],
+    "createdAt": 1606701552864
+  },
+  {
+    "id": 78,
+    "word": "warning",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈwôrniNG",
+    "explanation": "警告\n\n名词: 警告; 警报; 鉴; 鉴戒\n形容词: 注意",
+    "tags": [],
+    "createdAt": 1606701561958
+  },
+  {
+    "id": 79,
+    "word": "error",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈerər",
+    "explanation": "错误\n\n名词: 错误; 误差; 差错; 故障; 误; 偏差; 差; 谬误; 过失; 纰; 忒; 错讹; 蹉; 訧",
+    "tags": [],
+    "createdAt": 1606701568063
+  },
+  {
+    "id": 80,
+    "word": "field",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "fēld",
+    "explanation": "领域\n\n名词: 领域; 场; 田; 野外; 方面; 田间; 田野; 野; 地; 田地; 球场; 科; 平原; 畈",
+    "tags": [],
+    "createdAt": 1606701581473
+  },
+  {
+    "id": 81,
+    "word": "final",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈfīnl",
+    "explanation": "最后\n\n形容词: 最终; 最后; 终极\n名词: 结局; 下场",
+    "tags": [],
+    "createdAt": 1606701588834
+  },
+  {
+    "id": 82,
+    "word": "static",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈstadik",
+    "explanation": "静态的\n\n形容词: 静止\n名词: 大电干扰; 大气干扰",
+    "tags": [],
+    "createdAt": 1606701595787
+  },
+  {
+    "id": 83,
+    "word": "class",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "klas",
+    "explanation": "类\n\n名词: 类; 阶级; 班; 课; 班级; 类型; 种类; 课时; 流; 等; 品; 品级; 课业; 汇; 般; 畴; 学级\n动词: 类\n形容词: 班级的; 阶级的; 种类的",
+    "tags": [],
+    "createdAt": 1606701600720
+  },
+  {
+    "id": 84,
+    "word": "lock",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "läk",
+    "explanation": "锁\n\n名词: 锁; 绺; 鋂; 钤; 刹车; 楗; 撞锁\n动词: 锁; 绺; 拘禁",
+    "tags": [],
+    "createdAt": 1606701625453
+  },
+  {
+    "id": 85,
+    "word": "admin",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "管理员",
+    "tags": [],
+    "createdAt": 1606701652193
+  },
+  {
+    "id": 86,
+    "word": "administrator",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ədˈminəˌstrādər",
+    "explanation": "管理员\n\n名词: 管理员; 管理人; 经纪; 行政官员",
+    "tags": [],
+    "createdAt": 1606701666513
+  },
+  {
+    "id": 87,
+    "word": "main",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "mān",
+    "explanation": "主要\n\n形容词: 主要; 主; 最主要; 主干; 正; 优势; 基本的",
+    "tags": [],
+    "createdAt": 1606701688172
+  },
+  {
+    "id": 88,
+    "word": "stage",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "stāj",
+    "explanation": "阶段\n\n名词: 阶段; 舞台; 期; 台; 步; 台子; 场; 层次; 段落\n动词: 表演",
+    "tags": [],
+    "createdAt": 1606701693362
+  },
+  {
+    "id": 89,
+    "word": "primary",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈprīˌmerē",
+    "explanation": "主\n\n形容词: 主; 主要; 初级; 原; 第一; 最初; 初期; 基; 元",
+    "tags": [],
+    "createdAt": 1606701700043
+  },
+  {
+    "id": 90,
+    "word": "screen",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "skrēn",
+    "explanation": "屏幕\n\n名词: 屏幕; 屏; 银幕; 幕; 屏风; 筛子; 幕布; 掩护; 掩蔽; 布幕; 帘子; 面罩; 幔; 扆; 帷; 罳; 榥; 幨; 帏幕; 幔账\n动词: 屏蔽; 筛; 放映; 拍摄; 遮; 隐藏; 遮掩; 翳; 蔽; 幔; 隐蔽; 隐秘; 侜; 幔账; 蔽匿",
+    "tags": [],
+    "createdAt": 1606701729166
+  },
+  {
+    "id": 91,
+    "word": "code",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "kōd",
+    "explanation": "码\n\n名词: 码; 法典; 法规\n动词: 略码",
+    "tags": [],
+    "createdAt": 1606701752237
+  },
+  {
+    "id": 92,
+    "word": "math",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "数学",
+    "tags": [],
+    "createdAt": 1606701759976
+  },
+  {
+    "id": 93,
+    "word": "logic",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈläjik",
+    "explanation": "逻辑\n\n名词: 逻辑; 逻; 理; 论理; 伦; 眉目; 论理学; 逻辑性; 逻辑学",
+    "tags": [],
+    "createdAt": 1606701767900
+  },
+  {
+    "id": 94,
+    "word": "clear",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈklir",
+    "explanation": "明确\n\n形容词: 明确; 清楚; 明显; 清; 晴; 显然; 澄清; 明白; 明朗; 明晰; 明; 分明; 可见; 通畅; 明亮; 白; 澄; 真切; 了; 昭; 浏; 敞亮; 爽朗; 朗; 爽; 豁; 滢; 渌; 湛; 粼; 昭著; 炯; 荦; 暲; 喨; 泓; 睟; 颛; 昭章\n动词: 明确; 表明; 弄清; 开通; 肃清; 清算; 讲; 较; 交待; 豁; 湔; 逃脱; 绎\n副词: 真; 明确地; 明显地",
+    "tags": [],
+    "createdAt": 1606701777973
+  },
+  {
+    "id": 95,
+    "word": "clone",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "klōn",
+    "explanation": "克隆\n\n动词: 克隆\n名词: 无性繁殖; 无性系",
+    "tags": [],
+    "createdAt": 1606701798240
+  },
+  {
+    "id": 96,
+    "word": "factory",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈfakt(ə)rē",
+    "explanation": "厂\n\n名词: 厂; 工厂; 厂家; 厂子",
+    "tags": [],
+    "createdAt": 1606701806464
+  },
+  {
+    "id": 97,
+    "word": "bean",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "bēn",
+    "explanation": "豆角，扁豆\n\n名词: 豆; 豆类; 豆饼; 藿; 荜",
+    "tags": [],
+    "createdAt": 1606701813542
+  },
+  {
+    "id": 98,
+    "word": "entity",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈen(t)ədē",
+    "explanation": "实体\n\n名词: 实体; 形",
+    "tags": [],
+    "createdAt": 1606701821576
+  },
+  {
+    "id": 99,
+    "word": "null",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "nəl",
+    "explanation": "空值\n\n名词: 零\n形容词: 无效; 无效力的\n动词: 废止",
+    "tags": [],
+    "createdAt": 1606701829053
+  },
+  {
+    "id": 100,
+    "word": "select",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "səˈlekt",
+    "explanation": "选择\n\n动词: 选择; 选; 挑选; 择; 点; 筛选; 选拔; 遴选; 选派; 挑; 擢; 挑拣; 拔; 遴; 抡; 铨; 芼; 诹; 摘; 甄拔; 提选; 挑定\n形容词: 上等的; 选出的; 优良的",
+    "tags": [],
+    "createdAt": 1606701841455
+  },
+  {
+    "id": 101,
+    "word": "selector",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "səˈlektər",
+    "explanation": "选择器",
+    "tags": [],
+    "createdAt": 1606701847053
+  },
+  {
+    "id": 102,
+    "word": "update",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "更新\n\n名词: 现代化",
+    "tags": [],
+    "createdAt": 1606701853414
+  },
+  {
+    "id": 103,
+    "word": "delete",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "dəˈlēt",
+    "explanation": "删除\n\n动词: 删除; 删; 略; 杠; 歼",
+    "tags": [],
+    "createdAt": 1606701859561
+  },
+  {
+    "id": 104,
+    "word": "create",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "krēˈāt",
+    "explanation": "创建\n\n动词: 创建; 创造; 制造; 造成; 创; 创作; 缔造; 塑造; 造; 创设; 导致; 创制; 发明",
+    "tags": [],
+    "createdAt": 1606701865955
+  },
+  {
+    "id": 105,
+    "word": "manager",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈmanijər",
+    "explanation": "经理\n\n名词: 经理; 管理员; 经纪; 管理程序",
+    "tags": [],
+    "createdAt": 1606701878681
+  },
+  {
+    "id": 106,
+    "word": "increment",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈiNGkrəmənt",
+    "explanation": "增量",
+    "tags": [],
+    "createdAt": 1606702001460
+  },
+  {
+    "id": 107,
+    "word": "decrement",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈdekrəmənt",
+    "explanation": "递减",
+    "tags": [],
+    "createdAt": 1606702012506
+  },
+  {
+    "id": 108,
+    "word": "atomic",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "əˈtämik",
+    "explanation": "原子\n\n形容词: 原子; 核",
+    "tags": [],
+    "createdAt": 1606702034798
+  },
+  {
+    "id": 109,
+    "word": "config",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "配置",
+    "tags": [],
+    "createdAt": 1606702058437
+  },
+  {
+    "id": 110,
+    "word": "log",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "lôɡ",
+    "explanation": "日志\n\n名词: 原木; 木头; 场记; 航海日志; 圆材; 圆形木材",
+    "tags": [],
+    "createdAt": 1606702064844
+  },
+  {
+    "id": 111,
+    "word": "save",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "sāv",
+    "explanation": "救\n\n动词: 保存; 节省; 节约; 拯救; 救; 挽救; 省; 储蓄; 保留; 解救; 抢救; 节; 救援; 留; 储; 营救; 拯; 积蓄; 捄; 活; 保持; 储集; 储积\n介词: 除了; 加之; 而且; 除了 ... 以外\n连词: 要不是; 加之; 而且",
+    "tags": [],
+    "createdAt": 1606702075185
+  },
+  {
+    "id": 112,
+    "word": "copy",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈkäpē",
+    "explanation": "复制\n\n动词: 复制; 复印; 拷贝; 抄; 复本; 仿; 照搬; 模仿; 仿造; 摹; 仿制; 抄录; 抄写; 誊; 抄件; 录; 摹仿; 仿效; 缮; 套; 描; 因袭; 摸; 学舌; 继; 临写\n名词: 份; 摹; 摹本; 录; 发行; 编; 摸; 榜样; 仿制品",
+    "tags": [],
+    "createdAt": 1606702080446
+  },
+  {
+    "id": 113,
+    "word": "input",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈinˌpo͝ot",
+    "explanation": "输入\n\n动词: 键入; 敲入",
+    "tags": [],
+    "createdAt": 1606702089292
+  },
+  {
+    "id": 114,
+    "word": "output",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈoutˌpo͝ot",
+    "explanation": "输出\n\n名词: 产量; 产出; 出产; 产品\n动词: 生产; 出产; 制造",
+    "tags": [],
+    "createdAt": 1606702097101
+  },
+  {
+    "id": 115,
+    "word": "file",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "fīl",
+    "explanation": "文件\n\n名词: 文件; 档案; 锉; 卷宗; 案; 列\n动词: 锉; 归档",
+    "tags": [],
+    "createdAt": 1606702104011
+  },
+  {
+    "id": 116,
+    "word": "is",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "是",
+    "tags": [],
+    "createdAt": 1606702110903
+  },
+  {
+    "id": 117,
+    "word": "read",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "rēd",
+    "explanation": "读\n\n动词: 读; 阅读; 读书; 看; 阅; 阅览; 览; 开卷\n名词: 阅读; 阅; 阅览\n形容词: 有学问的",
+    "tags": [],
+    "createdAt": 1606702118216
+  },
+  {
+    "id": 118,
+    "word": "write",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "rīt",
+    "explanation": "写\n\n动词: 写; 编写; 撰写; 书写; 填写; 创作; 执笔; 编; 书; 笔; 填; 作文; 编撰; 泐; 著; 编著",
+    "tags": [],
+    "createdAt": 1606702126981
+  },
+  {
+    "id": 119,
+    "word": "break",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "brāk",
+    "explanation": "打破\n\n动词: 打破; 破; 断; 决裂; 折; 打断; 打; 刷新; 摔坏; 摔伤; 拆散; 擘; 摧; 砸; 摔; 摔断; 豁; 背; 坼; 辟; 隳; 堕; 赢; 隳脞\n名词: 休息; 切断; 决口; 摔断",
+    "tags": [],
+    "createdAt": 1606702147236
+  },
+  {
+    "id": 120,
+    "word": "next",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "nekst",
+    "explanation": "下一个\n\n形容词: 下; 未来; 下面; 明; 翌; 下边; 底下; 下一次; 下一个\n副词: 然后; 其次; 下一次\n介词: 比邻",
+    "tags": [],
+    "createdAt": 1606702156373
+  },
+  {
+    "id": 121,
+    "word": "id",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "id",
+    "explanation": "ID",
+    "tags": [],
+    "createdAt": 1606702203084
+  },
+  {
+    "id": 122,
+    "word": "while",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "(h)wīl",
+    "explanation": "而\n\n连词: 而; 却; 当时; 正在; 际; 斯\n动词: 消磨; 消\n名词: 时间\n介词: 直到",
+    "tags": [],
+    "createdAt": 1606702220395
+  },
+  {
+    "id": 123,
+    "word": "do",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "do͞o",
+    "explanation": "做\n\n动词: 做; 办; 干; 进行; 作; 行; 从事; 搞; 弄; 演; 操; 闹; 胹\n名词: 欺诈; 使为难",
+    "tags": [],
+    "createdAt": 1606702225347
+  },
+  {
+    "id": 124,
+    "word": "if",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "if",
+    "explanation": "如果\n\n连词: 如果; 是否; 如; 假如; 要是; 若是; 倘若; 倘; 假若; 假使; 要; 就是; 设; 假; 苟; 使; 虽; 傥; 的话",
+    "tags": [],
+    "createdAt": 1606702233113
+  },
+  {
+    "id": 125,
+    "word": "notify",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈnōdəˌfī",
+    "explanation": "通知\n\n动词: 通知; 告知; 知; 通; 报信; 关照; 晓示; 谕; 愬; 谕知",
+    "tags": [],
+    "createdAt": 1606702240478
+  },
+  {
+    "id": 126,
+    "word": "wait",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "wāt",
+    "explanation": "等待\n\n动词: 等待; 等; 等候; 候; 伺; 想到; 俟; 恇; 意; 意料; 意想; 听侯\n名词: 等候",
+    "tags": [],
+    "createdAt": 1606702247670
+  },
+  {
+    "id": 127,
+    "word": "thread",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "THred",
+    "explanation": "线\n\n名词: 线; 丝; 线索; 绪; 细线; 缕; 运作; 丝状物\n动词: 缕; 纫",
+    "tags": [],
+    "createdAt": 1606702255329
+  },
+  {
+    "id": 128,
+    "word": "sleep",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "slēp",
+    "explanation": "睡觉\n\n动词: 睡觉; 睡; 睡着; 寝; 觉; 眠; 长眠; 过夜; 昏迷; 梦寐\n名词: 觉; 麻木",
+    "tags": [],
+    "createdAt": 1606702260491
+  },
+  {
+    "id": 129,
+    "word": "start",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "stärt",
+    "explanation": "开始\n\n动词: 开始; 启动; 起动; 开头; 始; 起; 开工; 开; 启; 开办; 发动; 起头; 开动; 开幕; 开展; 创; 开创; 草创; 掀起; 开辟; 惊; 搞; 谡; 兴; 摅愤\n名词: 开端; 开头; 始; 头; 初期; 初; 发端",
+    "tags": [],
+    "createdAt": 1606702291615
+  },
+  {
+    "id": 130,
+    "word": "access",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈakˌses",
+    "explanation": "访问\n\n动词: 访问; 接驳; 进接; 取数\n名词: 存取; 通路; 进接",
+    "tags": [],
+    "createdAt": 1606702317080
+  },
+  {
+    "id": 131,
+    "word": "accessibility",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "əkˌsesəˈbilədē",
+    "explanation": "可及性\n\n名词: 易接近",
+    "tags": [],
+    "createdAt": 1606702335414
+  },
+  {
+    "id": 132,
+    "word": "service",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈsərvəs",
+    "explanation": "服务\n\n名词: 服务; 服役; 送达; 劳务; 役; 勤务; 营运; 服侍; 雇佣; 功\n动词: 服务; 维修; 招待\n形容词: 兵的; 军事的",
+    "tags": [],
+    "createdAt": 1606702341908
+  },
+  {
+    "id": 133,
+    "word": "server",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈsərvər",
+    "explanation": "服务器\n\n名词: 服务器; 伺服器",
+    "tags": [],
+    "createdAt": 1606702349689
+  },
+  {
+    "id": 134,
+    "word": "filter",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈfiltər",
+    "explanation": "过滤\n\n动词: 过滤; 筛选; 滤; 筛; 淋\n名词: 滤波器; 滤; 滤器; 过滤器; 滤光器",
+    "tags": [],
+    "createdAt": 1606702357382
+  },
+  {
+    "id": 135,
+    "word": "mouse",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "explanation": "老鼠\n\n名词: 鼠标; 鼠; 老鼠; 滑鼠; 鼠标器; 鼷; 耗\n动词: 窥探; 捕鼠",
+    "tags": [],
+    "createdAt": 1606702388055
+  },
+  {
+    "id": 136,
+    "word": "format",
+    "sourceLanguage": "en",
+    "targetLanguage": "zh-CN",
+    "phonetic": "ˈfôrˌmat",
+    "explanation": "格式\n\n名词: 格式; 规格; 版式; 开本\n动词: 格式化",
+    "tags": [],
+    "createdAt": 1606702399031
+  }
+]
